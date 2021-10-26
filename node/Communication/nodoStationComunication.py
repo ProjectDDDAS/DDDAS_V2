@@ -16,7 +16,7 @@ import Consensus.implementacionConsensus as implementacionConsensus
 global ip_station
 
 #Asignar el numero de la ip de la estacion
-ip_station = 'localhost'
+ip_station = '192.168.0.101'
 
 
 # dado que los mensajes son str, es necesario establecer convenciones para diferenciar os distintos tipos.
