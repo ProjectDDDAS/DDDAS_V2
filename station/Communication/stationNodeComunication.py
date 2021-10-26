@@ -6,7 +6,7 @@ import socket
 
 def empezarComunicacion(total_nodos, conexiones, ubicaciones, betas):
     socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    socket_server.bind(('localhost', 8000))
+    socket_server.bind(('192.168.0.101', 8000))
     socket_server.listen(10)
     numero_asignado = 0
     while True:
