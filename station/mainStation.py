@@ -17,9 +17,15 @@ def main():
         distancias = definirDistancias(total_agentes, conexiones)
     else:
         total_agentes = 3
-        conexiones = np.array([[0,1,1],[1,0,1],[1,1,0]])
-        ubicaciones = [[1.0,0.0,3.2],[2.2,4.1,4.1],[3.5,3.1,6.2]]
-        distancias = np.array([[0.0,4.0,4.0],[4.0,0.0,4.0],[4.0,4.0,0.0]])
+        conexiones = np.array([[0,1,1],
+                                [1,0,1],
+                                [1,1,0]])
+        ubicaciones = [[1.0,0.0],
+                        [2.2,4.5],
+                        [3.1,6.1]]
+        distancias = np.array([[0.0,4.0,4.0],
+                                [4.0,0.0,4.0],
+                                [4.0,4.0,0.0]])
 
     betas = calcularBetas(total_agentes,distancias)
     
